@@ -30,8 +30,8 @@ export default Home;
 // import EducationVisa from "./EducationVisa/EducationVisa";
 // import Services from "./Services/Services";
 // import { react } from '@vitejs/plugin-react-swc';
-import { Banner } from '.';
-import Products from "./Products/Products";
+// import { Banner } from '.';
+// import Products from "./Products/Products";
 
 // const Home = () => {
 //   return (

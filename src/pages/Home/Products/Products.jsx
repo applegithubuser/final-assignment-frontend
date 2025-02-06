@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "./Products";
+import Product from "../Products/Products";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../../Shared/Loading/Loading";
 
@@ -29,7 +29,7 @@ const Products = () => {
       </div>
       <div className="grid md:grid-cols-3 gap-4">
         {products.map((product) => (
-          <Products key={product._id} product={product}></Products>
+          <Product key={product._id} product={product}></Product>
         ))}
       </div>
     </div>
