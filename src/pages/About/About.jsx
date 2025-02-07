@@ -22,7 +22,7 @@ const About = () => {
                 </div>
                 <div className="md:w-1/2 ml-2">
                   <h1 className="text-2xl md:text-5xl font-bold text-accent">
-                    Explore the world with F1 visa
+                    Welcome to DorkariPonno
                   </h1>
                   <p className="py-6">
                   Welcome to <b><NavLink to="/">Dorkari Ponno</NavLink></b>, your go-to online store for quality second-hand and essential products. We believe in making shopping affordable, sustainable, and hassle-free. Our platform offers a wide range of items, including electronics, home appliances, furniture, and daily necessities—carefully selected to ensure quality and value for money. 
