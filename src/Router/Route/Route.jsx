@@ -11,6 +11,7 @@ import PrivateRoute from "./../PrivateRoute/PrivateRoute";
 import AdminRoute from "../AdminRoute/AdminRoute";
 import AddService from "../../pages/Dashboard/AddService/AddService";
 import Home from "../../pages/Home/Home";
+import Categories from './../../pages/Home/Categories/Categories';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
+      {
+        path: "/category/:categoryName",
+        element: <Categories></Categories>, 
+      },
+
       {
         path: "/about",
         element: <About></About>,
