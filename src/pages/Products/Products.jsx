@@ -1,7 +1,7 @@
 import React from "react";
-import Product from "../Products/Products";
+import Product from "./Products";
 import { useQuery } from "@tanstack/react-query";
-import Loading from "../../Shared/Loading/Loading";
+import Loading from "../Shared/Loading/Loading";
 
 const Products = () => {
   const {

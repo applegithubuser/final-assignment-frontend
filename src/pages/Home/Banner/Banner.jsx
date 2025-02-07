@@ -57,11 +57,11 @@ const Banner = () => {
 
       {/* Centered Text */}
       <div
-        className={`relative z-10 text-center text-white transition-all duration-1000 ease-in-out ${
+        className={`relative z-10 text-center transition-all duration-1000 ease-in-out ${
           isTransitioning ? "opacity-0 translate-y-10" : "opacity-100 translate-y-0"
         }`}
       >
-        <h1 className="text-4xl md:text-6xl font-bold">{slides[currentSlide].text}</h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-primary">{slides[currentSlide].text}</h1>
         <p className="mt-4 text-lg md:text-xl font-semibold">
           {slides[currentSlide].description}
         </p>

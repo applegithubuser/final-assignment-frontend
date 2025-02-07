@@ -12,7 +12,7 @@ const Reviws = () => {
       name: "Winson Herry",
       img: people1,
       review:
-        "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content",
+        "Absolutely love this store! The products are of top-notch quality, and the customer service team is always ready to assist. My order arrived earlier than expected, and the packaging was excellent. Will definitely be shopping again!",
       location: "California",
     },
     {
@@ -20,16 +20,16 @@ const Reviws = () => {
       name: "Winson Herry",
       img: people2,
       review:
-        "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content",
-      location: "California",
+        "Great experience! The website is easy to navigate, and the checkout process was smooth. The product exceeded my expectations, and the prices are reasonable. Highly recommended!",
+      location: "United Kingdom",
     },
     {
       _id: 3,
       name: "Winson Herry",
       img: people3,
       review:
-        "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content",
-      location: "California",
+        "This store never disappoints! I’ve ordered multiple times, and each time, I’ve been impressed with the quality and fast shipping. Plus, their return policy is hassle-free. Five stars!",
+      location: "France",
     },
     {
       _id: 4,

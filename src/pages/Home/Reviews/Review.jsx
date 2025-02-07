@@ -5,7 +5,7 @@ const Review = ({ singleReview }) => {
   return (
     <div className="card bg-base-100 shadow-xl">
       <div className="card-body">
-        <p>{review}</p>
+        <p><i>{review}</i></p>
         <div className="card-actions items-center mt-5">
           <img
             className="w-16 h-16 rounded-full border-2 border-primary p-1"

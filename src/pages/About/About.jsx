@@ -30,7 +30,7 @@ const About = () => {
                   <br/>
                   At <b><NavLink to="/">Dorkari Ponno</NavLink></b>, we are committed to eco-friendly shopping by giving products a second life while helping customers save more. Whether you're looking for budget-friendly deals or rare finds, we’ve got you covered!
                   </p>
-                  <MainButton>Contact Us</MainButton>
+                  <MainButton><NavLink to="/contact">Contact Us</NavLink></MainButton>
                 </div>
               </div>
             </div>

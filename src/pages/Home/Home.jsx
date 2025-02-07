@@ -1,7 +1,7 @@
 
 import React from "react";
 import Banner from "./Banner/Banner";
-import Product from "./Products/Products";
+import Product from "../Products/Products";
 import InfoCards from "./InfoCard/InfoCards";
 import Categories from "./Categories/Categories";
 import Newsletter from "./Newsletter/Newsletter";

@@ -12,6 +12,13 @@ import AdminRoute from "../AdminRoute/AdminRoute";
 import AddService from "../../pages/Dashboard/AddService/AddService";
 import Home from "../../pages/Home/Home";
 import Categories from './../../pages/Home/Categories/Categories';
+import Products from './../../pages/Products/Products';
+import Blog from './../../pages/Blog/Blog';
+import Contact from "../../pages/Contact/Contact";
+import PrivacyPolicy from './../../pages/PrivacyPolicy/PrivacyPolicy';
+import CookiePolicy from './../../pages/CookiePolicy/CookiePolicy';
+import TermsofUse from './../../pages/TermsofUse/TermsofUse';
+import Jobs from './../../pages/Jobs/Jobs';
 
 const router = createBrowserRouter([
   {
@@ -26,11 +33,46 @@ const router = createBrowserRouter([
         path: "/category/:categoryName",
         element: <Categories></Categories>, 
       },
-
+      {
+        path: "/products",
+        element: <Products></Products>,
+      },
       {
         path: "/about",
         element: <About></About>,
       },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+
+      {
+        path: "/contact", 
+        element: <Contact></Contact>,
+      },
+      
+      {
+        path: "/career", 
+        element: <Jobs></Jobs>,
+      },
+     
+      {
+        path: "/terms-of-use", 
+        element: <TermsofUse></TermsofUse>,
+      },
+
+      {
+        path: "/privacy-policy", 
+        element: <PrivacyPolicy></PrivacyPolicy>,
+      },
+      
+      {
+        path: "/cookie-policy", 
+        element: <CookiePolicy></CookiePolicy>,
+      },
+      
+
+
       {
         path: "/visa",
         element: <Visa></Visa>,
