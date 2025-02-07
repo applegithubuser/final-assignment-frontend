@@ -1,5 +1,7 @@
 import React from "react";
 import footerBackground from "../../../assets/image/footer.png";
+import { NavLink } from "react-router-dom";
+import logo from "./../../../assets/image/logo.png";
 
 const Footer = () => {
   return (
@@ -10,21 +12,27 @@ const Footer = () => {
         backgroundPosition: "center",
       }}
     >
-      <footer className="footer text-base-content p-10">
+      <footer className="footer flex-auto text-base-content p-10">
+      
+      <NavLink to="/">
+          <img className='translate-y-6 w-48 h-28 ' src={logo} alt="" />
+      </NavLink>
+        
+
         <nav>
           <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
+          <NavLink to="/about"><a className="link link-hover">About us</a></NavLink>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <a className="link link-hover">Marketing</a>
         </nav>
+        <nav>
+          <h6 className="footer-title">Legal</h6>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+        </nav>
+
         <nav>
           <h6 className="footer-title">Social</h6>
           <div className="grid grid-flow-col gap-4">

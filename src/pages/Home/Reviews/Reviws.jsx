@@ -6,7 +6,7 @@ import qoute from "../../../assets/image/qoute.png";
 import Review from "./Review";
 
 const Reviws = () => {
-  const testimonial = [
+  const reviews = [
     {
       _id: 1,
       name: "Winson Herry",
@@ -45,7 +45,7 @@ const Reviws = () => {
     <div className="my-12 px-5 mx-auto">
       <div className="flex justify-between">
         <div>
-          <h2 className="text-4xl text-primary font-semibold">Testimonial</h2>
+          <h2 className="text-4xl text-primary font-semibold">Customer Reviews</h2>
           <h4 className="text-2xl">People Says about us</h4>
         </div>
         <div>
@@ -54,7 +54,7 @@ const Reviws = () => {
       </div>
 
       <div className=" grid md:grid-cols-3 gap-4">
-        {testimonial.slice(0, 3).map((singleReview) => (
+        {reviews.slice(0, 3).map((singleReview) => (
           <Review key={singleReview._id} singleReview={singleReview}></Review>
         ))}
       </div>

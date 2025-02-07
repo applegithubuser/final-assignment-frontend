@@ -41,15 +41,15 @@ const Banner = () => {
       setTimeout(() => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
         setIsTransitioning(false); // End transition
-      }, 500); // Transition duration
-    }, 5000);
+      }, 1000); // Transition duration
+    }, 6000);
 
     return () => clearInterval(slideInterval); // Clean up interval on component unmount
   }, [slides.length]);
 
   return (
     <div
-      className="banner relative w-full h-[600px] flex items-center justify-center bg-cover bg-center overflow-hidden"
+      className="banner relative w-full h-[750px] flex items-center justify-center bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: `url(${slides[currentSlide].image})` }}
     >
       {/* Overlay for text readability */}

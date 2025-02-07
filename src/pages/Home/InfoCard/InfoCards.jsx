@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTruck, faHeadset, faLock } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useRef, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTruck, faHeadset, faLock } from "@fortawesome/free-solid-svg-icons";
 
 const InfoCards = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,20 +39,20 @@ const InfoCards = () => {
   }, []);
 
   return (
-    <div ref={infoRef} className="info-cards flex justify-around my-16 px-16 ">
+    <div ref={infoRef} className="info-cards flex justify-around my-16 px-16">
       {info.map((item, index) => (
         <div
           key={index}
-          className={`card bg-gray-100 p-4 rounded-md shadow-md text-center transform transition-all duration-500 ease-in-out hover:scale-105 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
+          className={`card bg-gradient-to-r from-primary to-secondary p-4 rounded-md shadow-md text-center transform transition-all duration-500 ease-in-out hover:scale-105 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
           }`}
         >
           <FontAwesomeIcon
             icon={item.icon}
-            className="text-6xl text-gray-800 mb-4"
+            className="text-6xl text-white mb-4" // Changed icon color to white
           />
-          <h3 className="font-semibold text-lg">{item.title}</h3>
-          <p>{item.description}</p>
+          <h3 className="font-semibold text-lg text-white">{item.title}</h3> {/* Changed text color to white */}
+          <p className="text-white">{item.description}</p> {/* Changed text color to white */}
         </div>
       ))}
     </div>

@@ -9,38 +9,85 @@ const Header = () => {
   const manuItems = (
     <>
       <li>
-        {" "}
-        <NavLink to="/">Home</NavLink>{" "}
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-bold" : "hover:text-primary"
+          }
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        {" "}
-        <NavLink to="/about">About</NavLink>{" "}
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-bold" : "hover:text-primary"
+          }
+        >
+          About
+        </NavLink>
       </li>
       <li>
-        {" "}
-        <NavLink to="/visa">Visa </NavLink>{" "}
+        <NavLink
+          to="/products"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-bold" : "hover:text-primary"
+          }
+        >
+          Products
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-bold" : "hover:text-primary"
+          }
+        >
+          Blog
+        </NavLink>
       </li>
 
       {user?.uid ? (
         <>
           <li>
-            <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive ? "text-primary font-bold" : "hover:text-primary"
+              }
+            >
+              Dashboard
+            </NavLink>
           </li>
           <li>
-            <button onClick={logOut}>Sign Out</button>
+            <button
+              onClick={logOut}
+              className="hover:text-primary"
+            >
+              Sign Out
+            </button>
           </li>
         </>
       ) : (
         <li>
-          <NavLink to="/login">Login</NavLink>
+          <NavLink
+            to="/login"
+            className={({ isActive }) =>
+              isActive ? "text-primary font-bold" : "hover:text-primary"
+            }
+          >
+            Login
+          </NavLink>
         </li>
       )}
     </>
   );
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-white z-50 mb-44">
-      <div className="navbar justify-between shadow-sm">
+    <div className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
+      <div className="navbar max-w-7xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -68,16 +115,13 @@ const Header = () => {
             </ul>
           </div>
           <NavLink to="/" className="">
-            <img className="h-16" src={logo} alt="" />
+            <img className="h-20" src={logo} alt="Dorkari Ponno Logo" />
           </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           {/* ======== Large device ======== */}
-          <ul className="menu menu-horizontal px-1">{manuItems}</ul>
+          <ul className="menu menu-horizontal gap-4 px-1">{manuItems}</ul>
         </div>
-        {/* <div className="navbar-end">
-          <a className="btn">Button</a>
-        </div> */}
         <label
           htmlFor="dashboard-drawer"
           className="btn btn-primary drawer-button lg:hidden"
